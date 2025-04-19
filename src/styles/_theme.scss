@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@layer base {
+    :root {
+      --font-sans: "Inter", sans-serif;
+      --font-sans--font-variation-settings: "opsz" 32;
+  
+      --grid-cols-layout: 70% 28%;
+    }
+  }
