@@ -31,6 +31,7 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/Endlosforscher/cravory.git
 cd cravory
+```
 
 ### 2.Install dependencies
 Make sure you have Node.js installed (recommendation: Node 20+).
