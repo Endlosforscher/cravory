@@ -38,15 +38,18 @@ Then run:
 
 ```bash
 npm install
+```
 
 ### 3. Start the Development Server
 ```bash
 npm run dev
+```
 
 ℹ️ Note: The default port is 3000, but you can change it in the vite.config.js file if needed.
 
 ### 4. Or build for production
 ```bash
 npm run build
+```
 
 Developed with ❤️ by Luigi Sabbetti
