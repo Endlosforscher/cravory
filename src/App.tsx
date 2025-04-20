@@ -1,9 +1,20 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import HomeCards from "./components/HomeCards";
+import RecipeListings from "./components/RecipeListings";
+import ViewAllRecipes from "./components/ViewAllRecipes";
+
 const App = () => {
   return (
-    <h1 className="font-sans text-5xl font-bold underline">
-    Hello world!
-  </h1>
+    <>
+      <Navbar />
+      <Hero />
+      <HomeCards />
+      <RecipeListings />
+      <ViewAllRecipes />
+    </>
   )
-}
+  }
 
-export default App
+  export default App;
+
