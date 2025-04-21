@@ -41,14 +41,25 @@ Then run:
 npm install
 ```
 
-### 3. Start the Development Server
+### 3. Start the Mock API Server
+Before starting the frontend, launch the mock API server using:
+```
+npm run server
+```
+
+By default, this will start json-server at http://localhost:8000.
+You can change the port in the package.json under the server script.
+
+👉 A proxy has been configured in vite.config.ts so you can access the API through /api on the same port as the frontend (e.g. http://localhost:3000/api/recipes).
+
+### 4. Start the Development Server
 ```bash
 npm run dev
 ```
 
 ℹ️ Note: The default port is 3000, but you can change it in the vite.config.js file if needed.
 
-### 4. Or build for production
+### 5. Or build for production
 ```bash
 npm run build
 ```
