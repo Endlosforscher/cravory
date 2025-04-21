@@ -1,20 +1,9 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import HomeCards from "./components/HomeCards";
-import RecipeListings from "./components/RecipeListings";
-import ViewAllRecipes from "./components/ViewAllRecipes";
+import { RouterProvider } from 'react-router-dom';
+import { router } from './router';
 
-const App = () => {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <HomeCards />
-      <RecipeListings />
-      <ViewAllRecipes />
-    </>
-  )
-  }
+export function App() {
+  return <RouterProvider router={router} />;
+}
 
-  export default App;
+export default App;
 

@@ -1,4 +1,5 @@
-[
+{
+  "recipes": [
     {
     "id": 1,
     "title": "Spaghetti Carbonara",
@@ -304,4 +305,5 @@
           "Reheat gently and serve warm."
         ]
       }
-]
+    ]
+}

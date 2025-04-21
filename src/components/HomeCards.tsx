@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Card from "./Card"
 
 const HomeCards = () => {
@@ -10,12 +11,12 @@ const HomeCards = () => {
           <p className="mt-2 mb-4">
           Search by ingredients you already have at home or explore by keywords to discover new flavors.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/search"
             className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
           >
             Start Searching
-          </a>
+          </Link>
         </Card>
 
         <Card background="bg-indigo-200">
@@ -23,12 +24,12 @@ const HomeCards = () => {
           <p className="mt-2 mb-4">
             Show our best recipes and get inspired by trending ingredients and dishes.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/recipes"
             className="inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600"
           >
             View Recipes
-          </a>
+          </Link>
         </Card>
       </div>
     </div>
