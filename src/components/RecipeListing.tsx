@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
 import { Recipe } from "./../types/recipe";
 import { TruncatedText } from './common/TruncatedText';
-import { FaSignal, FaClock, FaAllergies } from 'react-icons/fa';
+import { FaSignal, FaClock, FaAllergies, FaHeart, FaRegHeart } from 'react-icons/fa';
+import { useWishlist } from "../context/WishlistContext";
 
 type RecipeCardProps = {
   recipe: Recipe;
 };
 
 const RecipeListing = ({ recipe } : RecipeCardProps) => {
+    const { isSaved, toggle } = useWishlist();
+    const saved = isSaved(recipe.id);
+  
   return (
     <div className="bg-white rounded-xl shadow-md relative">
     <div className="p-4">
@@ -53,6 +57,13 @@ const RecipeListing = ({ recipe } : RecipeCardProps) => {
         >
          Read More
         </Link>
+        <button
+            onClick={() => toggle(recipe.id)}
+            className="absolute top-2 right-2 text-red-500 text-xl"
+            aria-label={saved ? 'Remove from wishlist' : 'Add to wishlist'}
+        >
+        {saved ? <FaHeart /> : <FaRegHeart />}
+      </button>
       </div>
     </div>
   </div>
