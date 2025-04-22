@@ -4,7 +4,7 @@ import Spinner from './Spinner';
 
 const RecipeListings = ({ isHome = false }) => { 
  
-  const { recipes, loading } = useRecipes();
+  const { recipes, loading } = useRecipes(undefined, isHome ? 3 : undefined);
   
   return (
     <section className="bg-blue-50 px-4 py-10">

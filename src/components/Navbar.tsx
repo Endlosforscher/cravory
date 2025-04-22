@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
 
           <div className="hidden md:flex md:items-center md:space-x-4">
             <NavLink to="/recipes" className={linkClass}>
-              Recipes
+              All Recipes
             </NavLink>
             <NavLink to="/search" className={linkClass}>
               Search
@@ -60,17 +60,6 @@ const Navbar: React.FC = () => {
       {mobileOpen && (
         <div className="md:hidden bg-indigo-600">
           <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `block px-4 py-2 text-white hover:bg-indigo-500${
-                isActive ? ' bg-indigo-700' : ''
-              }`
-            }
-            onClick={() => setMobileOpen(false)}
-          >
-            Home
-          </NavLink>
-          <NavLink
             to="/recipes"
             className={({ isActive }) =>
               `block px-4 py-2 text-white hover:bg-indigo-500${
@@ -79,7 +68,18 @@ const Navbar: React.FC = () => {
             }
             onClick={() => setMobileOpen(false)}
           >
-            Recipes
+            All Recipes
+          </NavLink>
+          <NavLink
+            to="/search"
+            className={({ isActive }) =>
+              `block px-4 py-2 text-white hover:bg-indigo-500${
+                isActive ? ' bg-indigo-700' : ''
+              }`
+            }
+            onClick={() => setMobileOpen(false)}
+          >
+            Search
           </NavLink>
         </div>
       )}

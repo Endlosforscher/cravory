@@ -25,7 +25,7 @@ const RecipeListing = ({ recipe } : RecipeCardProps) => {
       </div>
 
       <h3 className="text-indigo-500 mb-2 flex items-center gap-1">
-        <FaSignal />Difficulty: {recipe.difficulty}
+        <FaSignal /> {recipe.difficulty}
       </h3>
 
       <h3 className="text-indigo-200 mb-2 flex items-center gap-1">
@@ -37,9 +37,9 @@ const RecipeListing = ({ recipe } : RecipeCardProps) => {
       <div className="flex flex-col lg:flex-row justify-between mb-4">
         <div className="text-orange-700 mb-3">
         <p className="flex items-center gap-1">
-        <FaAllergies /> <strong>Allergens:</strong>{' '}
-          {recipe.allergens.length === 1 && recipe.allergens[0] === 'None' ? (
-            'None'
+        <FaAllergies /> {' '}
+          {recipe.allergens.length === 1 && recipe.allergens[0] != 'None' ? (
+            recipe.allergens[0]
           ) : (
             recipe.allergens.map((allergen, i) => (
               <span key={allergen}>
