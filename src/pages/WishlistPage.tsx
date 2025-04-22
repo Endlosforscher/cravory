@@ -8,16 +8,12 @@ export default function WishlistPage() {
   const [recipes, setRecipes] = useState<Recipe[]>([])
   const [loading, setLoading] = useState(true)
 
-  console.log('Wishlist IDs from context:', wishlist);
-
   useEffect(() => {
     const fetchAll = async () => {
       try {
         const res = await fetch('/api/recipes')
         const data: Recipe[] = await res.json()
-        console.log('🔍 All recipes fetched:', data.length);
         const saved = data.filter(r => wishlist.includes(r.id))
-        console.log('🔍 Filtered saved recipes:', saved);
         setRecipes(saved)
       } catch (err) {
         console.error('Error fetching wishlist recipes', err)

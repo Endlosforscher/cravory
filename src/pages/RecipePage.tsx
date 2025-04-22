@@ -1,41 +1,19 @@
-import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom";
 import Spinner from "../components/Spinner"
-import type { Recipe } from "../types/recipe";
 import { FaClock, FaSignal, FaAllergies, FaHeart, FaRegHeart } from 'react-icons/fa'
 import { useWishlist } from '../context/WishlistContext'
+import useRecipes from "../hooks/useRecipes";
 
 const RecipePage = () => {
   const { id } = useParams();
-  const [recipe, setRecipe] = useState<Recipe | null>(null);
-  const [loading, setLoading] = useState(true);
   const { isSaved, toggle } = useWishlist()
-
-  useEffect(() => {
-    if (!id) return;
-    const fetchRecipe = async () => {
-        try {
-          const apiUrl = `/api/recipes/${id}`;
-          const res = await fetch(apiUrl);
-          const recipeData = await res.json();
-          setRecipe(recipeData);
-        } catch (error) {
-          console.log(`Error fetching data: ${error}`)
-        } finally {
-          setLoading(false);
-        }
-      }
-  
-      fetchRecipe();  
-  }, [id])
+  const { recipes: recipe, loading } = useRecipes(id)
 
   if (loading) {
     return <Spinner loading={true} />;
   }
 
-  if (!recipe) {
-    return <p>Recipe not found.</p>;
-  }
+  if (!recipe || Array.isArray(recipe)) return <p>Recipe not found.</p> 
 
   const saved = isSaved(recipe.id)
 
