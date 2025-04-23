@@ -4,6 +4,7 @@ import type { Recipe } from '../types/recipe'
 export default function useRecipes(id?: string, limit?: number) {
   const [recipes, setRecipes] = useState<Recipe[] | Recipe | null>(null)
   const [loading, setLoading] = useState(true)
+  const baseUrl = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -11,11 +12,11 @@ export default function useRecipes(id?: string, limit?: number) {
         let url = '';
 
         if (id) {
-         url = `/api/recipes/${id}`
+         url = `${baseUrl}/recipes/${id}`
         } else if (limit) {
-         url = `/api/recipes?_limit=${limit}`
+         url = `${baseUrl}/recipes?_limit=${limit}`
         } else {
-         url = '/api/recipes'
+         url = `${baseUrl}/recipes`
         }
 
         const res = await fetch(url)
