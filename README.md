@@ -47,7 +47,7 @@ Before starting the frontend, launch the mock API server using:
 npm run server
 ```
 
-By default, this will start json-server at http://localhost:8000.
+By default, this will start json-server at http://localhost:5000.
 You can change the port in the package.json under the server script.
 
 👉 A proxy has been configured in vite.config.ts so you can access the API through /api on the same port as the frontend (e.g. http://localhost:3000/api/recipes).
