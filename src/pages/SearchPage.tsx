@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import RecipeListing from '../components/RecipeListing'
 import useRecipes from '../hooks/useRecipes'
 import Spinner from '../components/Spinner'
