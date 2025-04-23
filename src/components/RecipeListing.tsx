@@ -17,7 +17,7 @@ const RecipeListing = ({ recipe } : RecipeCardProps) => {
      
      <div className="h-48 overflow-hidden relative">
         <img
-          src={recipe.image}
+          src={`/images/${recipe.image}`}
           alt={recipe.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />

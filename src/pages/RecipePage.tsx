@@ -29,7 +29,7 @@ const RecipePage = () => {
             {saved ? <FaHeart /> : <FaRegHeart />}
             </button>
             <img
-                src={recipe.image}
+                src={`/images/${recipe.image}`}
                 alt={recipe.title}
                 className="w-full h-64 object-cover"
             />

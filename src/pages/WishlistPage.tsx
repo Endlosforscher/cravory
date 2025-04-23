@@ -4,6 +4,7 @@ import RecipeListing from '../components/RecipeListing'
 import type { Recipe } from '../types/recipe'
 import Spinner from '../components/Spinner'
 import { Link } from 'react-router-dom'
+import EmptyWishlist from '../assets/images/empty-wishlist.png'
 
 export default function WishlistPage() {
   const { wishlist } = useWishlist()
@@ -30,7 +31,7 @@ export default function WishlistPage() {
   if (recipes.length === 0) return (
     <>
         <div className="flex flex-col flex-grow items-center gap-6 justify-center">
-            <img className="h-30 w-auto" src="/src/assets/images/empty-wishlist.png" alt="Empty wishlist" />
+            <img className="h-30 w-auto" src={EmptyWishlist} alt="Empty wishlist" />
             <p className="block text-3xl font-serif">Your wishlist is empty</p>
             <Link
                 to="/recipes"
