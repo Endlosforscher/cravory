@@ -14,7 +14,8 @@ export default function WishlistPage() {
   useEffect(() => {
     const fetchAll = async () => {
       try {
-        const res = await fetch('/api/recipes')
+        const baseUrl = import.meta.env.VITE_API_BASE_URL;
+        const res = await fetch(`${baseUrl}/recipes`);
         const data: Recipe[] = await res.json()
         const saved = data.filter(r => wishlist.includes(r.id))
         setRecipes(saved)
