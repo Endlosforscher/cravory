@@ -69,7 +69,7 @@ export default function RecipeSearch() {
   if (loading) return <Spinner loading={true} />
 
   return (
-    <section className="lg:mx-auto mx-1 p-6">
+    <section className="mx-1 p-6">
       <h2 className="text-2xl font-serif font-bold mb-4">Search Recipes</h2>
       <div className="flex flex-col md:flex-row gap-6">
         <aside className="md:w-1/4">
