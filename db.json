@@ -1,0 +1,306 @@
+{
+  "recipes": [
+    {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "category": "main",
+    "image": "/src/assets/images/recipes/1.jpg",
+    "prepTime": 25,
+    "difficulty": "Medium",
+    "allergens": ["Gluten", "Egg", "Dairy"],
+    "ingredients": [
+        { "name": "Spaghetti", "quantity": "200g", "category": "grain" },
+        { "name": "Eggs", "quantity": "4", "category": "protein" },
+        { "name": "Pancetta", "quantity": "100g", "category": "meat" },
+        { "name": "Parmesan cheese", "quantity": "50g, grated", "category": "dairy" },
+        { "name": "Black pepper", "quantity": "to taste", "category": "spice" },
+        { "name": "Salt", "quantity": "to taste", "category": "spice" }
+    ],
+    "process": [
+        "Cook spaghetti in salted boiling water until al dente.",
+        "Fry pancetta until crisp; remove from heat and set aside.",
+        "Whisk egg yolks with grated Parmesan and pepper.",
+        "Drain pasta, reserving a little cooking water.",
+        "Quickly toss hot pasta with pancetta and egg mixture off the heat.",
+        "If too thick, add a splash of cooking water to create a creamy sauce.",
+        "Serve immediately, topped with extra Parmesan and pepper."
+    ]
+    },
+    {
+    "id": 2,
+    "title": "Avocado Toast with Poached Egg",
+    "category": "appetizer",
+    "image": "/src/assets/images/recipes/2.jpg",
+    "prepTime": 15,
+    "difficulty": "Easy",
+    "allergens": ["Egg", "Gluten"],
+    "ingredients": [
+        { "name": "Bread slices", "quantity": "2", "category": "grain" },
+        { "name": "Ripe avocado", "quantity": "1", "category": "vegetable" },
+        { "name": "Eggs", "quantity": "2", "category": "protein" },
+        { "name": "Lemon juice", "quantity": "1 tsp", "category": "condiment" },
+        { "name": "Chili flakes", "quantity": "pinch", "category": "spice" }
+    ],
+    "process": [
+        "Toast the bread until golden brown.",
+        "Mash avocado with lemon juice, salt, and pepper.",
+        "Spread avocado mash on toasts.",
+        "Poach eggs in simmering water for 3–4 minutes.",
+        "Top the toasts with poached eggs and sprinkle chili flakes.",
+        "Serve immediately."
+    ]
+    },
+    {
+    "id": 3,
+    "title": "Chicken Curry",
+    "category": "main",
+    "image": "/src/assets/images/recipes/3.jpg",
+    "prepTime": 45,
+    "difficulty": "Medium",
+    "allergens": ["None"],
+    "ingredients": [
+        { "name": "Chicken thighs", "quantity": "500g, boneless", "category": "meat" },
+        { "name": "Onion", "quantity": "1, finely chopped", "category": "vegetable" },
+        { "name": "Garlic cloves", "quantity": "3, minced", "category": "vegetable" },
+        { "name": "Ginger", "quantity": "1-inch piece, grated", "category": "spice" },
+        { "name": "Tomato puree", "quantity": "200ml", "category": "vegetable" },
+        { "name": "Coconut milk", "quantity": "200ml", "category": "condiment" },
+        { "name": "Curry powder", "quantity": "2 tbsp", "category": "spice" },
+        { "name": "Vegetable oil", "quantity": "2 tbsp", "category": "condiment" },
+        { "name": "Salt", "quantity": "to taste", "category": "spice" }
+    ],
+    "process": [
+        "Heat oil in a pan and sauté onion until translucent.",
+        "Add garlic and ginger; cook for 1–2 minutes.",
+        "Stir in curry powder and cook until fragrant.",
+        "Add chicken pieces; brown on all sides.",
+        "Pour in tomato puree and coconut milk; bring to a simmer.",
+        "Cover and cook for 20–25 minutes until chicken is cooked through.",
+        "Season with salt and serve with rice."
+    ]
+    },
+    {
+    "id": 4,
+    "title": "Vegan Buddha Bowl",
+    "category": "main",
+    "image": "/src/assets/images/recipes/4.jpg",
+    "prepTime": 30,
+    "difficulty": "Easy",
+    "allergens": ["Sesame"],
+    "ingredients": [
+        { "name": "Quinoa", "quantity": "150g", "category": "grain" },
+    { "name": "Chickpeas", "quantity": "200g, cooked", "category": "vegetable" },
+    { "name": "Avocado", "quantity": "1, sliced", "category": "vegetable" },
+    { "name": "Carrot", "quantity": "1, shredded", "category": "vegetable" },
+    { "name": "Cucumber", "quantity": "1, sliced", "category": "vegetable" },
+    { "name": "Sesame seeds", "quantity": "1 tbsp", "category": "spice" },
+    { "name": "Tahini dressing", "quantity": "2 tbsp", "category": "condiment" }
+    ],
+    "process": [
+        "Cook quinoa according to package instructions.",
+        "Arrange quinoa in a bowl and top with chickpeas, avocado, carrot, and cucumber.",
+        "Drizzle with tahini dressing and sprinkle sesame seeds.",
+        "Serve fresh or chilled."
+    ]
+    },
+    {
+    "id": 5,
+    "title": "Beef Tacos",
+    "category": "main",
+    "image": "/src/assets/images/recipes/5.jpg",
+    "prepTime": 35,
+    "difficulty": "Medium",
+    "allergens": ["Gluten"],
+    "ingredients": [
+        { "name": "Ground beef", "quantity": "400g", "category": "meat" },
+        { "name": "Taco shells", "quantity": "8", "category": "grain" },
+        { "name": "Onion", "quantity": "1, chopped", "category": "vegetable" },
+        { "name": "Garlic powder", "quantity": "1 tsp", "category": "spice" },
+        { "name": "Chili powder", "quantity": "1 tbsp", "category": "spice" },
+        { "name": "Lettuce", "quantity": "1 cup, shredded", "category": "vegetable" },
+        { "name": "Cheddar cheese", "quantity": "100g, grated", "category": "dairy" },
+        { "name": "Salsa", "quantity": "to taste", "category": "condiment" }
+    ],
+    "process": [
+        "Brown ground beef with onion in a skillet.",
+        "Season with garlic powder and chili powder.",
+        "Warm taco shells in the oven.",
+        "Fill shells with beef, lettuce, cheese, and salsa.",
+        "Serve immediately."
+    ]
+    },
+    {
+    "id": 6,
+    "title": "Chocolate Chip Cookies",
+    "category": "dessert",
+    "image": "/src/assets/images/recipes/6.jpg",
+    "prepTime": 30,
+    "difficulty": "Easy",
+    "allergens": ["Gluten", "Dairy", "Egg", "Nuts"],
+    "ingredients": [
+        { "name": "Flour", "quantity": "200g", "category": "grain" },
+        { "name": "Butter", "quantity": "100g, softened", "category": "dairy" },
+        { "name": "Sugar", "quantity": "100g", "category": "sweetener" },
+        { "name": "Brown sugar", "quantity": "100g", "category": "sweetener" },
+        { "name": "Eggs", "quantity": "1", "category": "protein" },
+        { "name": "Vanilla extract", "quantity": "1 tsp", "category": "sweetener" },
+        { "name": "Chocolate chips", "quantity": "150g", "category": "sweetener" },
+        { "name": "Chopped nuts", "quantity": "50g", "category": "vegetable" }
+    ],
+    "process": [
+        "Preheat oven to 180°C (350°F).",
+        "Cream butter and sugars until light and fluffy.",
+        "Beat in egg and vanilla extract.",
+        "Stir in flour, then fold in chocolate chips and nuts.",
+        "Drop spoonfuls onto baking sheet and bake for 10–12 minutes.",
+        "Allow to cool before serving."
+    ]
+    },
+    {
+    "id": 7,
+    "title": "Caprese Salad",
+    "category": "appetizer",
+    "image": "/src/assets/images/recipes/7.jpg",
+    "prepTime": 10,
+    "difficulty": "Easy",
+    "allergens": ["Dairy"],
+    "ingredients": [
+        { "name": "Tomatoes", "quantity": "2 large, sliced", "category": "vegetable" },
+        { "name": "Mozzarella", "quantity": "150g, sliced", "category": "dairy" },
+        { "name": "Fresh basil", "quantity": "Handful", "category": "spice" },
+        { "name": "Olive oil", "quantity": "2 tbsp", "category": "condiment" },
+        { "name": "Balsamic glaze", "quantity": "1 tbsp", "category": "condiment" }
+    ],
+    "process": [
+        "Arrange tomato and mozzarella slices alternately on a plate.",
+        "Tuck basil leaves between slices.",
+        "Drizzle with olive oil and balsamic glaze.",
+        "Season with salt and pepper and serve."
+    ]
+    },
+    {
+    "id": 8,
+    "title": "Mushroom Risotto",
+    "category": "main",
+    "image": "/src/assets/images/recipes/8.jpg",
+    "prepTime": 50,
+    "difficulty": "Hard",
+    "allergens": ["Dairy"],
+    "ingredients": [
+        { "name": "Arborio rice", "quantity": "200g", "category": "grain" },
+        { "name": "Mushrooms", "quantity": "200g, sliced", "category": "vegetable" },
+        { "name": "Onion", "quantity": "1, finely chopped", "category": "vegetable" },
+        { "name": "Garlic", "quantity": "2 cloves, minced", "category": "vegetable" },
+        { "name": "Vegetable broth", "quantity": "1L, hot", "category": "condiment" },
+        { "name": "Parmesan", "quantity": "50g, grated", "category": "dairy" },
+        { "name": "Butter", "quantity": "30g", "category": "dairy" },
+        { "name": "Olive oil", "quantity": "1 tbsp", "category": "condiment" }
+    ],
+    "process": [
+        "Heat oil and sauté onion and garlic until fragrant.",
+        "Add mushrooms and cook until tender.",
+        "Stir in rice and toast for 2 minutes.",
+        "Ladle in broth one cup at a time, stirring until absorbed before adding more.",
+        "When rice is al dente, stir in butter and Parmesan.",
+        "Season and serve hot."
+    ]
+    },
+    {
+    "id": 9,
+    "title": "Greek Yogurt Parfait",
+    "category": "dessert",
+    "image": "/src/assets/images/recipes/9.jpg",
+    "prepTime": 10,
+    "difficulty": "Easy",
+    "allergens": ["Dairy", "Nuts"],
+    "ingredients": [
+        { "name": "Greek yogurt", "quantity": "200g", "category": "dairy" },
+        { "name": "Granola", "quantity": "50g", "category": "grain" },
+        { "name": "Mixed berries", "quantity": "100g", "category": "vegetable" },
+        { "name": "Honey", "quantity": "1 tbsp", "category": "sweetener" },
+        { "name": "Chopped almonds", "quantity": "2 tbsp", "category": "vegetable" }
+    ],
+    "process": [
+        "Layer yogurt, granola, and berries in a glass.",
+        "Drizzle with honey and top with almonds.",
+        "Serve immediately."
+    ]
+    },
+    {
+    "id": 10,
+    "title": "Banana Pancakes",
+    "category": "dessert",
+    "image": "/src/assets/images/recipes/10.jpg",
+    "prepTime": 20,
+    "difficulty": "Easy",
+    "allergens": ["Gluten", "Egg", "Dairy"],
+    "ingredients": [
+        { "name": "Banana", "quantity": "1, mashed", "category": "vegetable" },
+        { "name": "Flour", "quantity": "100g", "category": "grain" },
+        { "name": "Milk", "quantity": "100ml", "category": "dairy" },
+        { "name": "Eggs", "quantity": "1", "category": "protein" },
+        { "name": "Maple syrup", "quantity": "to serve", "category": "sweetener" }
+    ],
+    "process": [
+        "Mix mashed banana, flour, milk, egg, and baking powder into a batter.",
+        "Heat a non-stick pan and pour small ladles of batter.",
+        "Cook until bubbles form, then flip and cook the other side.",
+        "Serve stacked with maple syrup."
+    ]
+    },
+    {
+        "id": 11,
+        "title": "Shrimp Fried Rice",
+        "category": "main",
+        "image": "/src/assets/images/recipes/11.jpg",
+        "prepTime": 30,
+        "difficulty": "Medium",
+        "allergens": ["Shellfish", "Soy"],
+        "ingredients": [
+            { "name": "Cooked rice", "quantity": "300g", "category": "grain" },
+            { "name": "Shrimp", "quantity": "200g, peeled", "category": "protein" },
+            { "name": "Peas", "quantity": "50g", "category": "vegetable" },
+            { "name": "Carrot", "quantity": "1, diced", "category": "vegetable" },
+            { "name": "Eggs", "quantity": "2, beaten", "category": "protein" },
+            { "name": "Soy sauce", "quantity": "2 tbsp", "category": "condiment" },
+            { "name": "Green onion", "quantity": "2 stalks, sliced", "category": "vegetable" },
+            { "name": "Sesame oil", "quantity": "1 tsp", "category": "condiment" }
+        ],
+        "process": [
+          "Heat sesame oil in a wok and scramble the eggs; remove and set aside.",
+          "Add shrimp and cook until pink; remove and set aside.",
+          "Stir-fry carrot and peas until tender.",
+          "Add rice, soy sauce, and cooked eggs; stir to combine.",
+          "Return shrimp to the wok and mix well.",
+          "Garnish with green onions and serve hot."
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Creamy Pumpkin Soup",
+        "category": "starter",
+        "image": "/src/assets/images/recipes/12.jpg",
+        "prepTime": 40,
+        "difficulty": "Easy",
+        "allergens": ["Dairy"],
+        "ingredients": [
+            { "name": "Pumpkin", "quantity": "500g, peeled & cubed", "category": "vegetable" },
+            { "name": "Onion", "quantity": "1, chopped", "category": "vegetable" },
+            { "name": "Garlic", "quantity": "2 cloves, minced", "category": "vegetable" },
+            { "name": "Vegetable broth", "quantity": "600ml", "category": "condiment" },
+            { "name": "Heavy cream", "quantity": "100ml", "category": "dairy" },
+            { "name": "Nutmeg", "quantity": "1/4 tsp", "category": "spice" },
+            { "name": "Olive oil", "quantity": "1 tbsp", "category": "condiment" },
+            { "name": "Salt & pepper", "quantity": "to taste", "category": "condiment" }
+        ],
+        "process": [
+          "Heat olive oil and sauté onion and garlic until translucent.",
+          "Add pumpkin cubes and cook for 5 minutes.",
+          "Pour in vegetable broth, bring to a boil, then simmer for 20 minutes.",
+          "Blend the mixture until smooth.",
+          "Stir in heavy cream and nutmeg; season with salt and pepper.",
+          "Reheat gently and serve warm."
+        ]
+      }
+    ]
+}

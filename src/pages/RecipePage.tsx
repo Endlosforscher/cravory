@@ -19,7 +19,7 @@ const RecipePage = () => {
 
   return (
     <>
-       <div className="container mx-auto max-w-3xl p-6">
+       <div className="container mx-auto max-w-3xl px-6 pt-6 pb-10">
         <article className="bg-white shadow-lg rounded-lg overflow-hidden relative">
             <button
             onClick={() => toggle(recipe.id)}
@@ -36,8 +36,8 @@ const RecipePage = () => {
 
             <div className="p-6">
                 <header className="mb-4">
-                <h1 className="text-3xl font-bold mb-1">{recipe.title}</h1>
-                <span className="inline-block bg-indigo-100 text-indigo-700 text-sm px-2 py-1 rounded">
+                <h1 className="text-3xl font-bold font-serif mb-1">{recipe.title}</h1>
+                <span className="inline-block bg-rose-100 text-rose-500 text-sm px-2 py-1 rounded">
                     {recipe.category}
                 </span>
                 </header>
@@ -59,8 +59,8 @@ const RecipePage = () => {
             </div>
             </div>
 
-            <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-2">Ingredients</h2>
+            <section className="mb-10">
+            <h2 className="text-2xl font-semibold font-serif mb-3">Ingredients</h2>
             <ul className="list-disc list-inside space-y-1">
                 {recipe.ingredients.map((ing) => (
                     <li key={ing.name}>
@@ -71,7 +71,7 @@ const RecipePage = () => {
             </section>
 
             <section>
-            <h2 className="text-2xl font-semibold mb-2">Preparation</h2>
+            <h2 className="text-2xl font-semibold font-serif mb-3">Preparation</h2>
             <ol className="list-decimal list-inside space-y-2">
                 {recipe.process.map((step, idx) => (
                     <li key={idx}>{step}</li>

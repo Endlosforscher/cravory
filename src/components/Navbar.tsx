@@ -9,12 +9,12 @@ const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const linkClass = ({ isActive }: NavLinkRenderProps) =>
-    `text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2${
-      isActive ? ' bg-black' : ''
+    `text-white hover:bg-rose-500 hover:text-white rounded-md px-3 py-2${
+      isActive ? ' bg-rose-500' : ''
     }`;
 
   return (
-    <nav className="bg-indigo-700 border-b border-indigo-500">
+    <nav className="bg-rose-400 border-b border-rose-400">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
 
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
             </NavLink>
             <Link
               to="/wishlist"
-              className="text-white hover:bg-gray-900 rounded-md p-2"
+              className="text-white rounded-md p-2"
               aria-label="Wishlist"
             >
               <FaHeart className="text-xl" />
@@ -41,14 +41,14 @@ const Navbar: React.FC = () => {
           <div className="flex items-center md:hidden">
             <Link
               to="/wishlist"
-              className="text-white hover:bg-gray-900 rounded-md p-2 mr-2"
+              className="text-white hover:bg-rose-400 rounded-md p-2 mr-2"
               aria-label="Wishlist"
             >
               <FaHeart className="text-xl" />
             </Link>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="text-white hover:bg-gray-900 rounded-md p-2"
+              className="text-white hover:bg-rose-400 rounded-md p-2"
               aria-label="Toggle menu"
             >
               {mobileOpen ? <FaTimes /> : <FaBars />}
@@ -58,12 +58,12 @@ const Navbar: React.FC = () => {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-indigo-600">
+        <div className="md:hidden bg-rose-600">
           <NavLink
             to="/recipes"
             className={({ isActive }) =>
-              `block px-4 py-2 text-white hover:bg-indigo-500${
-                isActive ? ' bg-indigo-700' : ''
+              `block px-4 py-2 text-white hover:bg-rose-400${
+                isActive ? ' bg-rose-500' : ''
               }`
             }
             onClick={() => setMobileOpen(false)}
@@ -73,8 +73,8 @@ const Navbar: React.FC = () => {
           <NavLink
             to="/search"
             className={({ isActive }) =>
-              `block px-4 py-2 text-white hover:bg-indigo-500${
-                isActive ? ' bg-indigo-700' : ''
+              `block px-4 py-2 text-white hover:bg-rose-400${
+                isActive ? ' bg-rose-500' : ''
               }`
             }
             onClick={() => setMobileOpen(false)}

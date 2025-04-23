@@ -11,5 +11,5 @@ export const TruncatedText: React.FC<TruncatedTextProps> = ({
     text.length > maxLength
       ? `${text.slice(0, maxLength)}...`
       : text;
-  return <p>{display}</p>;
+  return <span>{display}</span>;
 };
