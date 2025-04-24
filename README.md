@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cravory.vercel.app/assets/logo-CodzV-5_.svg" alt="Cravory" style="max-width: 300px;">
+  <img src="https://cravory.vercel.app/assets/logo-CodzV-5_.svg" alt="Cravory" style="max-width: 50%;">
   <br />
     <br />
     <h1 align="center">Cravory</h1>
