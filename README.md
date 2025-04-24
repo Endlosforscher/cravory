@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cravory.vercel.app/assets/logo-CodzV-5_.svg" alt="Cravory" style="max-width: 50%;">
+  <img src="https://cravory.vercel.app/assets/logo-CodzV-5_.svg" alt="Cravory" width="50%">
   <br />
     <br />
     <h1 align="center">Cravory</h1>
@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://cravory.vercel.app/images/cravory-preview.png" alt="Cravory Preview" style="max-width: 100%;">
+  <img src="https://cravory.vercel.app/images/cravory-preview.png" alt="Cravory Preview">
 </p>
 
 ## What is Cravory  
